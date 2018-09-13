@@ -1,0 +1,42 @@
+# BRVIM Vim configuration and plugin bundle
+
+Last modified: 2018-09-13 15:36
+
+While teaching a computer science course using C, C++, PHP and other languages in our college, the need arose to have a powerful editor for developing software.
+
+VI/M was chosen for the following reasons:
+* standard software available or even preinstalled on most UNIX Systems
+* basic knowledge of vi is useful when administering UNIX Systems
+* open source
+* available on almost all platforms
+* works well on GUIs but also in a terminal window
+* extensible using plugins
+* great support for programming in different languages in the form of 
+  * syntax highlighting
+  * snippets
+  * syntax checks
+
+As is the case with every tool, vim also has it's disadvantages
+* Quite a steep learning curve, mostly due to the modal editing concept, which requires a good gentle introduction
+* Text mode vim has no menus, making it less approachable
+* Modal editing is difficult to grasp for young people who are used to do almost everything by pointing
+
+This vim configuration attempts to provide a development plattform with the best features and plugins, while still trying to remain lean. 
+
+Overview:
+* configuration which integrates the mouse
+* pathogen is used to load all plugins from the directory bundle
+* Plugins currently used:
+  * cvim C Programming support
+  * doxygen Documentation standard
+  * nerdtree File manager
+  * snipmate For language dependent snipptes expansion
+  * supertab
+  * syntastic for syntax and style checking. You will have to install the necessary checkers, see the .vimrc for details
+  * airline for a nice, colored status line. Be sure to have xterm-256colors!
+  * bracketed paste
+
+B.Brunner, 2018-09-13
+
+
+

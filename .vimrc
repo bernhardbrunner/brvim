@@ -1,10 +1,11 @@
-"Last modified: 2018-09-13 15:08
+"Last modified: 2018-09-13 15:16
 "Author: Bernhard Brunner
-"License: GNU
+"License: GNU License
 
 let mapleader=","
 let maplocalleader=","
 
+"enable advanced features
 set nocompatible
 set background=dark
 colorscheme jellybeans
@@ -78,8 +79,8 @@ let g:airline_symbols.paste = 'Þ'
 let g:airline_symbols.paste = '∥'
 let g:airline_symbols.whitespace = 'Ξ'
 
+" Syntastical settings
 "if exists('g:loaded_syntastic_log_autoload')
-    " Syntastical settings
     set statusline+=%#warningmsg#
     set statusline+=%{SyntasticStatuslineFlag()}
     set statusline+=%*
@@ -89,15 +90,15 @@ let g:airline_symbols.whitespace = 'Ξ'
     let g:syntastic_check_on_open = 1
     let g:syntastic_check_on_wq = 1
 
-	let g:syntastic_error_symbol = "\u2717"
-	let g:syntastic_warning_symbol = "\u26A0"
-	let g:syntastic_enable_balloons = 1
-	let g:syntastic_auto_jump = 3
+    let g:syntastic_error_symbol = "\u2717"
+    let g:syntastic_warning_symbol = "\u26A0"
+    let g:syntastic_enable_balloons = 1
+    let g:syntastic_auto_jump = 3
 
     let g:syntastic_c_checkers=['gcc', 'cppcheck']
     let g:syntastic_c_compiler_options = "-Wall -Wextra -Wpedantic"
     let g:syntastic_c_cppcheck_args = "--enable=all --suppress=unusedFunction"
- 
+
     let g:syntastic_cpp_checkers=['gcc', 'cppcheck']
     "let g:syntastic_cpp_compiler_options = "-std=c++11 -Wall -Wextra -Wpedantic"
     "let g:syntastic_cpp_compiler = "g++"
